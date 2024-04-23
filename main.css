@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+header{
+    background-color: #192a56;
+    padding: 8px;
+    color: #fff;
+}
+header > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+
+
+
+h2 {
+    border-bottom: solid #192a56 2px;
+    padding-bottom: 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+.products {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% 
+}
+.products img{
+    padding: 4px;
+}
+
+article h3, p{
+        padding: 8px;
+}
+#about {
+    padding: 24px;
+}
+#about img{
+    max-width: 400px;
+    margin-right: 24px;
+    
+}
+section, h2{
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+
+button{
+    display: block;
+    width: 98%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119756;
+    columns: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    
+    
+    .flex-container{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }
+    header .flex-container{
+        display: flex;
+    }
+    .products  {
+        display: grid;
+        grid-template-columns: 24% 24%;
+        padding: 8px;
+    }
+    .products img{
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    #about img{
+        max-width: 100%;
+        margin-bottom: 24px;
+        margin-right: 0px;
+    }
+    h2{
+        padding: 24px;
+    }
+       
+}
+
+@media screen and (max-width:640px){
+    .flex-container{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }
+    header .flex-container{
+        display: flex;
+    }
+    .products  {
+        display: block;
+        /*grid-template-columns: 24% 24%;
+        padding: 8px;
+        */
+    }
+    .products img{
+        max-width: 100%;
+        padding:16px;
+    }
+    #about img{
+        max-width: 100%;
+        margin-bottom: 24px;
+        margin-right: 0px;
+    }
+    h2{
+        padding: 24px;
+    }
+    .products button{
+        margin-bottom: 20px;
+    }
+}
+
+
